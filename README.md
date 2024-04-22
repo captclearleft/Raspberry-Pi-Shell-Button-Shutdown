@@ -30,7 +30,9 @@ like this :
 
 
 timedatectl set-ntp true &
+
 sh /usr/scripts/test7.sh &
+
 exit 0
 
 
