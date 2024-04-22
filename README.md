@@ -8,6 +8,11 @@ https://www.youtube.com/watch?v=koUr7oOyUXY
 
 https://www.ics.com/blog/gpio-programming-exploring-libgpiod-library #This was very helpful
 
+https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/about/
+
+https://www.ics.com/blog/gpio-programming-exploring-libgpiod-library
+
+
 The shell scripts written here are written with basic hacky coding skills and are not meant for production or commercial use.  These sripts are for educational use as an example.
 Create a folder in the usr directory
 
