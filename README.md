@@ -1,6 +1,11 @@
 # Raspberry-Pi-Shell-Button-Shutdown
 Shutdown or Restart Pi with shell script (kernel 6.6) libgpiod
 
+Thanks too:
+https://github.com/solarsamuel/raspi5_IO
+https://www.youtube.com/watch?v=koUr7oOyUXY
+https://www.ics.com/blog/gpio-programming-exploring-libgpiod-library #This was very helpful
+
 The shell scripts written here are written with basic hacky coding skills and are not meant for production or commercial use.  These sripts are for educational use as an example.
 Create a folder in the usr directory
 sudo mkdir /usr/scripts #scripts dir created.
