@@ -29,17 +29,17 @@ add your shell execute command at the end above exit 0 with an ambersand (&) or 
 like this :
 
 #!/bin/sh -e
+
+#rc.local
+
+#This script is executed at the end of each multiuser runlevel.
+#Make sure that the script will "exit 0" on success or any other
+#value on error.
 #
-# rc.local
-#
-# This script is executed at the end of each multiuser runlevel.
-# Make sure that the script will "exit 0" on success or any other
-# value on error.
-#
-# In order to enable or disable this script just change the execution
-# bits.
-#
-# By default this script does nothing.
+#In order to enable or disable this script just change the execution
+#bits.
+
+#By default this script does nothing.
 
 timedatectl set-ntp true &
 sh /usr/scripts/test7.sh &
