@@ -1,10 +1,12 @@
 # Raspberry-Pi-Shell-Button-Shutdown
 Shutdown or Restart Pi with shell script (kernel 6.6) libgpiod
 
-The shell scripts here are written with basic hacky coding skills and are not meant for produlction or commercial use.  These sripts are for educational use as an example.
+The shell scripts written here are written with basic hacky coding skills and are not meant for production or commercial use.  These sripts are for educational use as an example.
 Create a folder in the usr directory
 sudo mkdir /usr/scripts #scripts dir created.
 cp the shell scripts into this directory (or the directory of your choosing).
+To run restart.sh script whenever button is pressed - place command in rc.local or create your own service.
+
 Go to /etc
 Edit rc.local
 sudo nano /etc/rc.local
@@ -27,10 +29,4 @@ like this :
 
 timedatectl set-ntp true &
 sh /usr/scripts/test7.sh &
-exit 0
-
-Or like this 
-
-sh /usr/scripts/test7.sh &
-timedatectl set-ntp true
 exit 0
