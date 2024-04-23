@@ -37,7 +37,15 @@ exit 0
 
 
 
+You will likely have to make rc.local executable (if the program does not run after a reboot, this is likely the solution): 
+
+sudo chmod +x /etc/rc.local
+
+
 NOTES:
+
+
+
 #CHIP 0 is for pi 4 
 CHIP=0  #gpiodetect to determine what chip.
 
