@@ -31,7 +31,7 @@ like this :
 
 timedatectl set-ntp true &
 
-sh /usr/scripts/test7.sh &
+sh /usr/scripts/reboot.sh &
 
 exit 0
 
