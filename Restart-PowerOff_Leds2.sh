@@ -43,6 +43,10 @@ while true; do
         sleep .5
         echo 'Bettercap Stoped' | systemd-cat -p warning
         sudo echo '1-1.3' |sudo tee /sys/bus/usb/drivers/usb/unbind
+        #The below command may be better as sometimes the BUS and ID change.  
+        #Wireless dongle may not come back up. If thats the case - comment out above
+        #and use the below command with your lsusb results
+        #sudo usb_modeswitch -v 0x0cf3 -p 0x9271 --reset-usb
         echo 'Unbind Wireless' | systemd-cat -p warning
         gpioset gpiochip0 5=1
         sleep .2
