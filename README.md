@@ -63,3 +63,10 @@ sudo shutdown -h -r now # version of reboot
 sudo reboot now
 sudo systemctl stop pwnagotchi && sudo pwnagotchi --clear && sudo shutdown -h now
 sudo systemctl stop pwnagotchi && sudo pwnagotchi --clear && sudo shutdown -h now
+
+
+NOTE - I could not get the board to pull the pin high (like you can in the python library) through shell script. So, I use the classic original way of doing it.
+
+I pull the pin HIGH by wiring the pin through a 220 ohm resistor to 3.3v - Then the BUTTON is wired from the pin to GROUND.
+
+The Shell script is looking for the pin to be LOW...
