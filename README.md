@@ -31,7 +31,7 @@ like this :
 
 timedatectl set-ntp true &
 
-sh /usr/scripts/reboot.sh &
+bash /usr/scripts/reboot.sh &
 
 exit 0
 
@@ -41,7 +41,13 @@ You will likely have to make rc.local executable (if the program does not run af
 
 sudo chmod +x /etc/rc.local
 
+Also - You will likely need to do the same to the BASH/SHELL scripts as well.  Reason - In one of my example scripts - 
+The script restarts services, turns off the usb dongle, and restarts it.  Then the script needs to restart itself. 
+Thus it needs permissions.  So 
 
+sudo chmod +x /usr/scripts/yoursript.sh
+
+ 
 NOTES:
 
 
